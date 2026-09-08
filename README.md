@@ -74,17 +74,3 @@ The app connects to the `portafolio` database and reads the `projects` collectio
 
 - The MongoDB Node driver v7 dropped callback support in `MongoClient.connect()`, so the connection uses promise chaining (`.then()`) instead of the callback style shown in older tutorials.
 - Express 5 ships with `express.json()` and `express.urlencoded()` built in, making the separate `body-parser` dependency redundant.
-
-## Roadmap
-
-- [ ] Move the connection string out of source and into environment variables
-- [ ] Add a `.gitignore` and remove `node_modules/` from version control
-- [ ] Expose the `projects` collection through CRUD routes (`GET`, `POST`, `PUT`, `DELETE`)
-- [ ] Pass the `db` handle into the route layer instead of keeping it in the bootstrap file
-- [ ] Centralized error handling middleware and consistent error responses
-- [ ] Input validation on write operations
-- [ ] Dockerize the service with `docker compose` for local development
-
-## Author
-
-**Jesús Elías Ávila Sauza (Chus)** — [github.com/Jesus-PLUS](https://github.com/Jesus-PLUS)
